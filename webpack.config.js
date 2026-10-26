@@ -25,9 +25,9 @@ module.exports = {
     ]
   },
   plugins: [
-    // Usamos el HTML de src como plantilla para crear la página final.
+    // Usamos el HTML de la raíz como plantilla para crear la página final.
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
+      template: "./index.html"
     })
   ],
   devServer: {

@@ -24,14 +24,21 @@ npm run build
 
 Los archivos listos para publicar se generan en `dist/`.
 
+## Publicar en GitHub Pages
+
+El workflow `.github/workflows/pages.yml` compila y publica automáticamente `dist/` al subir cambios a la rama `main`.
+En GitHub, abre **Settings > Pages** y selecciona **GitHub Actions** como fuente de publicación. No publiques directamente la raíz del repositorio: allí está el código fuente, y los estilos se incluyen en la compilación de Webpack.
+
 ## Estructura del proyecto
 
 ```text
 .
+├── .github/workflows/
+│   └── pages.yml        # Compila y publica el sitio en GitHub Pages
+├── index.html           # Plantilla de la página
 ├── src/
-│   ├── index.html       # Estructura y contenido de la página
-│   ├── index.js         # Búsqueda, conteo, resaltado y alertas
-│   └── styles.css       # Estilos adaptables
+│   ├── index.js         # Búsqueda, conteo y resaltado
+│   └── styles.css       # Estilos de la interfaz
 ├── babel.config.json    # Compatibilidad de JavaScript con Babel
 ├── webpack.config.js    # Entrada, reglas, plantilla y servidor local
 ├── package.json         # Dependencias y comandos
