@@ -1,0 +1,17 @@
+/* Usamos tonos rosados y una tarjeta sencilla para mantener la interfaz clara. */
+* { box-sizing: border-box; }
+body { margin: 0; padding: 32px 16px; background: #fff0f5; color: #482b3b; font: 16px Arial, sans-serif; }
+main { max-width: 650px; margin: auto; padding: 24px; border: 1px solid #f8d7e4; border-radius: 16px; background: white; box-shadow: 0 8px 24px #c94f7918; }
+h1 { margin: 0 0 20px; color: #d63378; font-size: 25px; }
+/* Los campos y botones comparten bordes redondeados y un resaltado visible al enfocarlos. */
+textarea, input { width: 100%; margin-bottom: 12px; padding: 12px; border: 1px solid #edc5d5; border-radius: 8px; font: inherit; }
+textarea:focus, input:focus { outline: 2px solid #f3a6c2; border-color: #df5c91; }
+textarea { min-height: 150px; resize: vertical; }
+button { margin: 0 6px 12px 0; padding: 10px 18px; border: 0; border-radius: 8px; background: #d63378; color: white; font: inherit; cursor: pointer; }
+button:hover { background: #b92360; }
+#clear { background: #b66b89; }
+#clear:hover { background: #96506c; }
+/* Separamos visualmente los mensajes y el área donde se muestra el resultado. */
+#message { min-height: 20px; color: #c12d6b; }
+#result { min-height: 70px; padding: 14px; border: 1px solid #f1d1de; border-radius: 8px; background: #fffafd; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
+mark { border-radius: 3px; background: #ffd4e4; color: #a91f59; }

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de palabras</title>
+  </head>
+  <body>
+    <main>
+      <!-- Aquí están los campos para escribir el texto y la búsqueda. -->
+      <h1>Buscador de palabras</h1>
+      <textarea id="text" placeholder="Escribe o pega tu texto"></textarea>
+      <input id="word" type="text" placeholder="Palabra o carácter a buscar" />
+      <button id="search">Buscar</button>
+      <button id="clear">Limpiar</button>
+      <!-- Estos espacios muestran avisos, el total y el texto con sus coincidencias. -->
+      <p id="message" role="status"></p>
+      <p>Apariciones: <strong id="count">0</strong></p>
+      <div id="result" aria-live="polite"></div>
+    </main>
+  </body>
+</html>
